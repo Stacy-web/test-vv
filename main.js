@@ -1,18 +1,11 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-faq', {
     loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
+    slidesPerView:4,
+    spaceBetween: 24,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    }
 });
 
 function clearAccordionItem(item) {

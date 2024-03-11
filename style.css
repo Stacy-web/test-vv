@@ -121,16 +121,22 @@ ul {
     line-height: 140%;
 }
 
-.section__title {
+h2.section__title {
     font-size: 40px;
     font-weight: 700;
     line-height: 120%;
 }
 
-.section__title_accent {
+h2.section__title_accent {
     color: #fff;
     font-size: 60px;
     font-weight: 900;
+}
+
+h3.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 .action-list {
@@ -172,9 +178,23 @@ ul {
     border-radius: 13.33px;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
+.swiper-faq {
+    width: 100%;
+}
+
+.swiper-faq .swiper-slide {
+    height: auto;
+}
+
+.faq-card {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    height: 100%;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.faq-card_cols {
+    display: flex;
 }
 
 .section-info {
@@ -199,9 +219,6 @@ ul {
 
 .accordion__link {
     text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 120%;
 }
 
 .accordion__link,
