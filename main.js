@@ -1,20 +1,24 @@
-const swiper = new Swiper('.swiper-faq', {
-    loop: true,
-    slidesPerView:4,
+const swiperFaq = new Swiper('.swiper-faq', {
+    slidesPerView: 1,
     spaceBetween: 24,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3
+        },
+        992: {
+            slidesPerView: 4
+        }
     }
 });
 
-function clearAccordionItem(item) {
-    item.classList.remove('accordion__item_active');
-    linkText.removeAttribute('style');
-}
-
 const accordionItems = document.querySelectorAll('.accordion__item');
-
 accordionItems.forEach(item => {
     const link = item.querySelector('.accordion__link');
 
